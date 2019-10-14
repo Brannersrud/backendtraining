@@ -14,9 +14,8 @@ app.use(function(req, res, next) {
     next();
   });
 // Connection URL
-var url = 'mongodb+srv://andersax:kornblanding123@desklabslogin-p2upz.mongodb.net/test?retryWrites=true';
 // Database Name
-const dbName = 'desklabs';
+const dbName = '';
 const parser = { useNewUrlParser: true };
 mongoose.connect(url,parser)
 .then(() => console.log("db connected"))
